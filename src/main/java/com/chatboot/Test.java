@@ -26,6 +26,7 @@ public class Test {
 			 restTemplate.getForObject(url, ForismaticModel.class);
 		} catch (Exception e) {
 			logger.info("Can't call forismatic");
+			logger.info(e.getMessage());
 		}
 		logger.info("after call forismatic");
 		return model;
