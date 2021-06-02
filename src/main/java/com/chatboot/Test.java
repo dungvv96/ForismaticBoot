@@ -21,6 +21,8 @@ public class Test {
 	public ForismaticModel testGetForismatic() {
 		logger.info("Call api test");
 		RestTemplate restTemplate = new RestTemplate();
-		return restTemplate.getForObject(url, ForismaticModel.class);
+		ForismaticModel model = restTemplate.getForObject(url, ForismaticModel.class);
+		logger.info("after call forismatic");
+		return model;
 	}
 }
