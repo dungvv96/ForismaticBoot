@@ -23,7 +23,7 @@ public class Test {
 		RestTemplate restTemplate = new RestTemplate();
 		ForismaticModel model = new ForismaticModel();
 		try {
-			 restTemplate.getForObject(url, ForismaticModel.class);
+			model = restTemplate.getForObject(url, ForismaticModel.class);
 		} catch (Exception e) {
 			logger.info("Can't call forismatic");
 			logger.info(e.getMessage());
