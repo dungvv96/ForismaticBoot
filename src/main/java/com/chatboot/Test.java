@@ -15,7 +15,7 @@ public class Test {
 
 	private static final Logger logger = LoggerFactory.getLogger(Test.class);
 	
-	final String url = "https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
+	final String url = "http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json";
 	
 	@GetMapping
 	public ForismaticModel testGetForismatic() {
